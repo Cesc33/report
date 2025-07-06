@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pitt Bros - BOH Report</title>
+  </head>
+  <body>
+    <h1>Pitt Bros BOH Supervisors Daily Report 🍖 🔪</h1>
+
+    <form id="reportForm">
+      <label>📱 WhatsApp number:</label>
+      <input
+        type="text"
+        id="whatsappNumber"
+        placeholder="Ex: 353871234567"
+        required
+      />
+
+      <label
+        >Date: <input type="date" id="date" required value="2025-07-05"
+      /></label>
+      <label
+        >Supervisor: <input type="text" id="supervisor" required value="Camila"
+      /></label>
+      <label>Opening: <input type="text" id="opening" value="Hauyp" /></label>
+      <label
+        >Closing: <input type="text" id="closing" value="Weverson & Maicon"
+      /></label>
+
+      <label
+        >Service Notes:
+        <textarea id="service" rows="4"></textarea>
+      </label>
+
+      <label
+        >Out of Stock Items:
+        <textarea id="outOfStock" rows="2"></textarea>
+      </label>
+
+      <label
+        >Deliveroo Status:
+        <select id="deliveroo">
+          <option value="ON" selected>ON</option>
+          <option value="OFF">OFF</option>
+        </select>
+      </label>
+
+      <label
+        >Supplier Issues: <input type="text" id="supplierIssues" value="None"
+      /></label>
+      <label
+        >Guest Complaints:
+        <input type="text" id="guestComplaints" value="No complaints reported."
+      /></label>
+
+      <label
+        >Ordering for next day:
+        <select id="ordering">
+          <option value="Yes" selected>Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+
+      <label
+        >Maintenance Issues:
+        <textarea id="maintenance" rows="2"></textarea>
+      </label>
+
+      <label
+        >Cleaning Completed:
+        <select id="cleaning">
+          <option value="Yes" selected>Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+
+      <label
+        >Prep Notes:
+        <textarea id="prepNotes"></textarea>
+      </label>
+
+      <label
+        >Paperwork Completed:
+        <select id="paperwork">
+          <option value="Yes" selected>Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+
+      <label
+        >Safety Checks Completed:
+        <select id="safety">
+          <option value="Yes" selected>Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+
+      <label
+        >Attach Docs on Monday:
+        <input type="text" id="docs" value="N/A" />
+      </label>
+
+      <label
+        >Other Issues:
+        <textarea id="otherIssues">None</textarea>
+      </label>
+
+      <button id="sendBtn" type="button">Send via WhatsApp</button>
+    </form>
+
+    <h2>Pré-visualização:</h2>
+    <pre id="preview">
+Fill out the form and click the button to see the preview.</pre
+    >
+
+    <script src="script.js"></script>
+  </body>
+</html>
